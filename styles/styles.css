@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  background-color: hsl(210, 60%, 98%);
+}
+body .main-container {
+  border-radius: 15px;
+  background-color: white;
+  width: 731px;
+  height: 842px;
+  margin: 64px auto;
+  padding: 36px 32px;
+}
+body .main-container .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+body .main-container .head .counter {
+  color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 1px 9px;
+  background-color: hsl(219, 85%, 26%);
+}
+body .main-container .head .mark-all {
+  border: none;
+  background-color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+body .main-container .head .mark-all:hover {
+  cursor: pointer;
+  color: hsl(219, 74%, 48%);
+  font-weight: 500;
+}
+body .main-container .notification-container {
+  width: 671px;
+  height: 81px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  display: flex;
+}
+body .main-container .notification-container img {
+  width: 47px;
+  height: 47px;
+  margin: 15px;
+}
+body .main-container .notification-container .title-message {
+  margin-top: 15px;
+}
+body .main-container .notification-container .title-message .name {
+  color: black;
+}
+body .main-container .notification-container .title-message b {
+  margin: 0 5px;
+}
+body .main-container .notification-container .title-message b a {
+  text-decoration: none;
+}
+body .main-container .notification-container .title-message b a:hover {
+  color: hsl(219, 74%, 48%);
+}
+body .main-container .notification-container .title-message .date {
+  margin: 5px 0 0 5px;
+  color: hsl(219, 54%, 90%);
+}
+body .main-container .not-seen {
+  background-color: hsl(210, 60%, 98%);
+}
+body .main-container .not-seen .tick {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(1, 90%, 64%);
+  border-radius: 50%;
+  margin-left: 6px;
+}
+body .main-container .notification-container-grid {
+  display: grid;
+  grid-template-columns: 1fr 595px;
+  grid-template-rows: 17px 25px 25px 125px;
+}
+body .main-container .notification-container-grid img {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 47px;
+  height: 47px;
+  margin: 0 15px;
+}
+body .main-container .notification-container-grid .title-text {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+body .main-container .notification-container-grid .title-text a {
+  margin-right: 5px;
+  text-decoration: none;
+  color: black;
+}
+body .main-container .notification-container-grid .title-text a:hover {
+  color: hsl(219, 74%, 48%);
+}
+body .main-container .notification-container-grid .date {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  color: hsl(219, 54%, 90%);
+}
+body .main-container .notification-container-grid .message {
+  width: 565px;
+  height: 98px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  background-color: hsl(219, 54%, 90%);
+  color: hsl(219, 12%, 52%);
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 8px;
+}
+body .main-container .notification-container-grid .message:hover {
+  cursor: pointer;
+}
+body .main-container #kimberly .display-kimberly {
+  display: flex;
+}
+body .main-container #kimberly .display-kimberly img {
+  margin-left: 170px;
+}
+body .main-container #kimberly .display-kimberly img:hover {
+  cursor: pointer;
+  padding: 2px;
+  border: 1px solid hsl(219, 54%, 90%);
+  border-radius: 10px;
+}
+body .main-container .seen .link, body .main-container .seen .group {
+  color: hsl(219, 12%, 52%);
+}
+body .main-container .seen .link:hover, body .main-container .seen .group:hover {
+  cursor: pointer;
+  color: hsl(219, 74%, 48%);
+}
+
+.attribution-container {
+  margin-bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */

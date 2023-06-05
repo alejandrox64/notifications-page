@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+$White: hsl(0, 0%, 100%);
+$Very-light-grayish-blue: hsl(210, 60%, 98%);
+$Light-grayish-blue-1: hsl(211, 68%, 94%);
+$Light-grayish-blue-2: hsl(205, 33%, 90%);
+$Grayish-blue: hsl(219, 54%, 90%);
+$Dark-grayish-blue: hsl(219, 12%, 52%);
+$Very-dark-blue: hsl(224, 21%, 14%);
+$Red: hsl(1, 90%, 64%);
+$Blue: hsl(219, 85%, 26%);
+$Blue-color: hsl(219, 74%, 48%);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    background-color: $Very-light-grayish-blue;
+
+    .main-container {
+        border-radius: 15px;
+        background-color: white;
+        width: 731px;
+        height: 842px;
+        margin: 64px auto;
+        padding: 36px 32px;
+        
+        .head {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 35px;
+            .counter {
+
+                color: white;
+                border-radius: 5px;
+                margin-left: 10px;
+                padding: 1px 9px;
+                background-color: $Blue;
+            }
+
+            .mark-all {
+                border: none;
+                background-color: white;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $Blue-color;
+                    font-weight: 500;
+                }
+            }
+        }
+        .notification-container {
+            width: 671px;
+            height: 81px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            
+            img {
+                width: 47px;
+                height: 47px;
+                margin: 15px;
+            }
+            .title-message {
+                margin-top: 15px;
+                .name {
+                    color: black;
+                }
+                b {
+                    margin: 0 5px;
+                    a {
+                        text-decoration: none;
+                        &:hover {
+                        color: $Blue-color;
+                        }
+                    }
+                }
+                
+                .date {
+                    margin: 5px 0 0 5px;
+                    color: $Grayish-blue;
+                }
+            }
+        }
+        .not-seen {
+            background-color: $Very-light-grayish-blue;
+            .tick {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: $Red;
+                border-radius: 50%;
+                margin-left: 6px;
+            }
+        }
+        .notification-container-grid {
+            display: grid;
+            grid-template-columns: 1fr 595px;
+            grid-template-rows: 17px 25px 25px 125px;
+
+            img {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+                width: 47px;
+                height: 47px;
+                margin: 0 15px;
+            }
+            .title-text {
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+                a {
+                    margin-right: 5px;
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        color: $Blue-color;
+                    }
+                }
+            }
+            .date {
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
+                color: $Grayish-blue;
+            }
+            .message {
+                width: 565px;
+                height: 98px;
+                grid-column: 2 / 3;
+                grid-row: 4 / 5;
+                background-color: $Grayish-blue;
+                color: $Dark-grayish-blue;
+                border-radius: 8px;
+                padding: 15px;
+                margin-top: 8px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        #kimberly {
+            .display-kimberly {
+                display: flex;
+                img {
+                    margin-left: 170px;
+                    &:hover {
+                        cursor: pointer;
+                        padding: 2px;
+                        border: 1px solid $Grayish-blue;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .seen {
+            .link, .group {
+                color: $Dark-grayish-blue;
+                &:hover {
+                    cursor: pointer;
+                    color: $Blue-color;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+.attribution-container { 
+    margin-bottom: 10px;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
